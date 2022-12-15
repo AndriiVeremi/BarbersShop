@@ -1,0 +1,621 @@
+/* Header */
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  padding: 32px 0;
+  margin-right: 130px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.header .link {
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.header .link:hover {
+  color: #ff6c00;
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.contact-list .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contact-list .link {
+  text-transform: uppercase;
+}
+
+/* Hero */
+
+.hero .container {
+  display: flex;
+}
+
+.hero .hero-social {
+  width: 90px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 25px;
+  padding-bottom: 40px;
+}
+
+.hero-list {
+  transform: rotate(-90deg) translate(19px);
+  display: flex;
+  align-items: center;
+  transform-origin: top left;
+}
+
+.hero-list::before {
+  content: " ";
+  margin-right: 40px;
+  background-color: #303030;
+  height: 1px;
+  width: 60px;
+}
+
+.hero-list .item {
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.hero-list .item:hover {
+  color: #ff6c00;
+}
+
+.hero-list .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.hero-description {
+  padding: 270px 526px 208px 100px;
+  background-color: #2d2c2c;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/desktop/hero_bd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-description .hero-subtitle {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-description .hero-title {
+  width: 470px;
+  margin-bottom: 20px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.hero-description .hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.hero-subtitle::before {
+  content: " ";
+  background-color: #9da4bd;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+}
+
+/* Стилі блоку Про нас */
+
+.about .container {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about .about-list {
+  display: flex;
+  margin-right: 20px;
+}
+
+.about .item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.about-description {
+  max-width: 470px;
+}
+
+.about-description .section-title,
+.about-description .section-subtitle {
+  margin-bottom: 20px;
+}
+
+.about-desc {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about-text {
+  margin-bottom: 42px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* Стилі блоку ціни */
+
+.services {
+  background: #111319 url(../images/desktop/service_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.services .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.services .section-subtitle {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+
+.services .section-title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.services-price {
+  display: flex;
+}
+
+.services-list {
+  padding: 20px 30px;
+  width: calc((100% - 30px) / 2);
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  margin-bottom: 40px;
+}
+
+.services-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.services-list .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.serv {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.services .button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Стилі блоку традиції */
+
+.traditional .container {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.traditional-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: calc((100% - 30px) / 3);
+  margin-right: 130px;
+  margin-left: 100px;
+}
+
+.traditional-list .item {
+  width: 170px;
+  height: 133px;
+  background-color: #f7f7f7;
+  padding: 24px 20px;
+}
+
+.traditional-list .item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.traditional-list .item:nth-child(-n + 2) {
+  margin-bottom: 30px;
+}
+
+.traditional-list .item:nth-child(even) {
+  transform: translateY(30px);
+}
+
+.traditional-list .number {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.traditional-list .sign {
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+  color: #ff6c00;
+}
+
+.traditional-list .text {
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-align: center;
+  color: #303030;
+}
+
+.traditional-description {
+  max-width: 500px;
+}
+
+.traditional-description .section-subtitle,
+.traditional-description .section-title {
+  margin-bottom: 20px;
+}
+
+.description-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* Barbers */
+
+.barbers {
+  background-color: #f7f7f7;
+}
+
+.barbers .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.barbers .section-subtitle {
+  margin-bottom: 20px;
+}
+
+.barbers .section-title {
+  margin-bottom: 44px;
+}
+
+.barbers-list {
+  display: flex;
+}
+
+.barbers-list .item {
+  width: calc((100% - 60px) / 3);
+  text-align: center;
+}
+
+.barbers-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.barbers-foto {
+  margin-bottom: 30px;
+}
+
+.barbers-name {
+  margin-bottom: 8px;
+}
+
+.barbers-extrem {
+  margin-bottom: 30px;
+  color: #ff6c00;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+
+.social-link {
+  display: block;
+  margin-top: 12px;
+  fill: #303030;
+}
+
+.social-item:hover .social-link {
+  fill: #ff6c00;
+}
+
+/* Стилі блоку портфоліо */
+
+.portfolio .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio .section-subtitle {
+  margin-bottom: 44px;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-list .item {
+  width: calc((100% - 90px) / 4);
+}
+
+/* Contacts */
+
+.contacts {
+  background: #191c26 url(../images/desktop/contacts-bg.png) 80% no-repeat;
+}
+
+.contacts .container {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contacts .section-title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.booking-area {
+  margin-right: 130px;
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 570px;
+}
+
+.booking-form .button {
+  width: 160px;
+}
+
+.booking-form input {
+  padding-bottom: 8px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  border-bottom: 1px solid #fff;
+  outline: transparent;
+  color: #fff;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.booking-form input:focus::placeholder,
+.booking-form textarea:focus::placeholder {
+  color: #fff;
+}
+
+.booking-form input {
+  width: 270px;
+  height: 24px;
+  margin-bottom: 44px;
+}
+
+.booking-form .textarea-wrapper {
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.booking-form textarea {
+  width: 570px;
+  height: 76px;
+  resize: none;
+  display: block;
+}
+
+.booking-form .name-input + input {
+  margin-left: 30px;
+}
+
+.working-hours {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.working-hours::before {
+  content: " ";
+  background-color: #9da4bd;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+}
+
+.working-time {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contacts-list {
+  margin-bottom: 70px;
+}
+
+.contacts-list .item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  margin-bottom: 20px;
+}
+
+.contacts-list .item span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.item-icon {
+  fill: transparent;
+  stroke: #9da4bd;
+  width: 24px;
+  height: 24px;
+}
+
+/* Стилі блоку футер */
+
+.footer {
+  background-color: #f7f7f7;
+}
+
+.footer .container {
+  display: flex;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+}
+
+.footer .copyright {
+  padding: 56px 0;
+  color: #9da4bd;
+}
+
+.footer-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.footer-list::before {
+  content: " ";
+  margin-right: 40px;
+  background-color: #303030;
+  height: 1px;
+  width: 60px;
+}
+
+.footer-list .item {
+  color: #303030;
+}
+
+.footer-list .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-list .item:hover {
+  color: #ff6c00;
+}
+
+/* Modal */
+
+/* .modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  transition: transform 1000ms linear;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+} */
